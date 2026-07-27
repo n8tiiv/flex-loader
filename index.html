@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Loader</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="theme-color" content="#0d1117">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+
+<body>
+
+<header>
+    <h1>Amazon Flex Loader</h1>
+    <p>Say a location, then the street numbers.</p>
+</header>
+
+<section class="current">
+    <h2>Current Section</h2>
+    <div id="currentSection">NONE</div>
+</section>
+
+<section class="buttons">
+
+    <button id="startBtn" class="green">
+        🎤 Start Listening
+    </button>
+
+    <button id="stopBtn" class="red">
+        ⏹ Stop
+    </button>
+
+    <button id="undoBtn">
+        ↩ Undo
+    </button>
+
+    <button id="copyBtn">
+        📋 Copy
+    </button>
+
+    <button id="clearBtn">
+        🗑 Clear
+    </button>
+
+</section>
+
+<section id="status">
+    Ready
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Backseat</h3>
+        <ul id="backseat"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Backseat Floor</h3>
+        <ul id="backseatFloor"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Front Seat</h3>
+        <ul id="frontSeat"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Front Floor</h3>
+        <ul id="frontFloor"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Trunk</h3>
+        <ul id="trunk"></ul>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
